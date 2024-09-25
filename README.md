@@ -1,5 +1,7 @@
 
-# daxdelviraDESCRIPTION=An engaging 1-3 sentence description of your lab.'s Website
+# Dax Delvira Academic Website
+
+Repo for my academic website, under construction as of Sep. 2024
 
 Visit **[daxdelvira.github.io/dax](https://daxdelvira.github.io/dax)** 🚀
 
