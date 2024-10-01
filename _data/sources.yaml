@@ -1,4 +1,22 @@
 # manually provide all citation details
+- title: "Building AI Agents for Autonomous Clouds: Challenges and Design Principles"
+  authors:
+    - Manish Shetty
+    - Yinfang Chen
+    - Gagan Somashekar
+    - Minghua Ma
+    - Yogesh Simmhan
+    - Xuchao Zhang
+    - Jonathan Mace
+    - Dax Delvira
+    - Pedro Las-Casas
+    - Shachee Mishra Gupta
+    - Suman Nath
+    - Chetan bansal
+    - Saravan Rajmohan
+  publisher: Symposium on Cloud Computing 2024
+  date: 2024-11-20
+  link: https://arxiv.org/abs/2407.12165
 - title: "Morph: Efficient File-Lifetime Redundancy Management for Cluster File Systems"
   authors:
     - Timothy Kim
