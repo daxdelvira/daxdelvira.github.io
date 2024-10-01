@@ -1,26 +1,17 @@
 ---
-title: Team
+title: Community
 nav:
   order: 3
-  tooltip: About our team
+  tooltip: My lab, collaboration initiatives, and community contributions
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# {% include icon.html icon="fa-solid fa-users" %}NetSys @ GATech
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-{% include section.html %}
-
-{% include list.html data="members" component="portrait" filters="role: pi" %}
-{% include list.html data="members" component="portrait" filters="role: ^(?!pi$)" %}
-
-{% include section.html background="images/background.jpg" dark=true %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+I'm grateful to work with a fantastic advisor and labmates. We each explore the intersections of ML, networks, and systems from different angles. More on my labmates work can be found on their respective sites:
+ + Vima Gupta (Systems optimizations for mixture-of-experts models)
+ + Mingyu Guan (Graph neural networks and DNN Inference)
+ + Jiaqi Deng (Throughput-optimized computer vision systems)
+ + Abhishek Vijeev 
 
 {% include section.html %}
 
@@ -33,3 +24,9 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 {% endcapture %}
 
 {% include grid.html style="square" content=content %}
+
+{% include section.html background="images/background.jpg" dark=true %}
+
+Diversifying CS Research and systems research specifically is important to me. If you're a woman considering undertaking computer science research in undergrad, or already know you want to pursue a PhD, and need help writing statements, finding REU programs, building skillsets or have questions about how to get started, please email me. You have what it takes and there are plenty of people who want to support you--we were in your shoes a short while ago!
+
+{% include section.html %}
