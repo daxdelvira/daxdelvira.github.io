@@ -3,7 +3,7 @@
 
 {% include section.html %}
 ## About Me
-I am a first year PhD student broadly interested in the intersection of systems and ML. I'm fortunate to be part of NetSys Lab @ GATech, advised by Anand Iyer. Prior to joining NetSys, I was an undergraduate research intern for various systems projects. I worked with Greg Ganger and Rashmi Vinayak at the CMU Parallel Data Lab, implementing a new theory-enhanced  system to make transitioning data between redundancy schemes more efficient,and with Sid Sen, Chetan Bansal, and Gagan Somashekar using AI behavior mimicry techniques to generate synthetic application request traces for system reliability.
+I am a first year PhD student broadly interested in the intersection of systems and ML. I'm fortunate to be part of NetSys Lab @ GATech, advised by Anand Iyer. Prior to joining NetSys, I was an undergraduate research intern for various systems projects. I worked with Greg Ganger and Rashmi Vinayak at the CMU Parallel Data Lab, implementing a new theory-enhanced  system to make transitioning data between redundancy schemes more efficient,and with Sid Sen, Chetan Bansal, and Gagan Somashekar at Microsoft Research Labs using AI behavior mimicry techniques to generate synthetic application request traces for system reliability.
 
 I always enjoy learning from other students and researchers, and can be reached by emailing dax [at] gatech [dot] edu.
 
@@ -13,8 +13,7 @@ I always enjoy learning from other students and researchers, and can be reached 
 ## Highlights
 
 {% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+My published work.
 
 {%
   include button.html
@@ -37,7 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Under construction. Check back later for open source projects :smile:
 
 {%
   include button.html
@@ -62,7 +61,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+A bit about my lab, my service contributions, etc.
 
 {%
   include button.html
