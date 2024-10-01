@@ -1,5 +1,5 @@
 # manually provide all citation details
-- title: Morph: Efficient File-Lifetime Redundancy Management for Cluster File Systems
+- title: "Morph: Efficient File-Lifetime Redundancy Management for Cluster File Systems"
   authors:
     - Timothy Kim
     - Sanjith Athlur
