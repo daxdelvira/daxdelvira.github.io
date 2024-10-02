@@ -5,14 +5,20 @@
 ## About Me
 
 {%
-  include portrait.html
-  lookup="dax-delvira"
-  style="small"
+  include feature.html
+  image="images/IMG_0752.jpg"
+  link="research"
+  title="Publications"
+  text=text
 %}
 
+{% capture text %}
 I am a first year PhD student broadly interested in the intersection of systems and ML. I'm fortunate to be part of NetSys Lab @ GATech, advised by Anand Iyer. Prior to joining NetSys, I was an undergraduate research intern for various systems projects. I worked with Greg Ganger and Rashmi Vinayak at the CMU Parallel Data Lab, implementing a new theory-enhanced  system to make transitioning data between redundancy schemes more efficient,and with Sid Sen, Chetan Bansal, and Gagan Somashekar at Microsoft Research Labs using AI behavior mimicry techniques to generate synthetic application request traces for system reliability.
 
 I always enjoy learning from other students and researchers, and can be reached by emailing dax [at] gatech [dot] edu.
+
+{% endcapture %}
+
 
 
 {% include section.html %}
