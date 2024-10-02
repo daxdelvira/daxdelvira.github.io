@@ -35,7 +35,7 @@ I always enjoy learning from other students and researchers, and can be reached 
 
 {%
   include feature.html
-  image="images/MSR_agent_benchmark_architecture.pdf"
+  image="images/Screenshot From 2024-10-02 14-53-37.png"
   link="research"
   title="Publications"
   text=text
