@@ -8,7 +8,7 @@
   include feature.html
   image="images/IMG_0752.jpg"
   link="research"
-  title="Publications"
+  title=""
   text=text
 %}
 
