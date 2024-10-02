@@ -13,8 +13,7 @@ Upcoming and published work I'm an author on.
 
 ## Highlighted
 
-{% include citation.html lookup="Morph: Efficient File-Lifetime Redundancy
-Management for Cluster File Systems" style="rich" %}
+{% include citation.html lookup="Building AI Agents for Autonomous Clouds: Challenges and Design Principles" style="rich" %}
 
 {% include section.html %}
 
