@@ -132,35 +132,22 @@ header:not([data-big]) {
 }
 
 header[data-big] {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: $big-padding 20px;
+  
+  @media (max-width: $collapse) {
+    justify-content: flex-end;
 
-  @if $sticky {
-    top: unset;
-  }
+    .nav-toggle {
+      display: flex;
+    }
 
-  .home {
-    flex-direction: column;
-    flex-grow: 0;
-  }
+    .nav-toggle:not(:checked) + nav {
+      display: none;
+    }
 
-  .logo {
-    height: $logo-big;
-  }
-
-  .title-text {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .title {
-    font-size: var(--xxl);
-  }
-
-  .subtitle {
-    font-size: var(--large);
+    nav {
+      align-items: flex-end;
+      flex-direction: column;
+      width: 100%;
+    }
   }
 }
