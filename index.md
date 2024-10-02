@@ -13,7 +13,7 @@ I always enjoy learning from other students and researchers, and can be reached 
 ## Highlights
 
 {% capture text %}
-My published work.
+
 
 {%
   include button.html
@@ -28,7 +28,7 @@ My published work.
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/MSR_agent_benchmark_architecture.pdf"
   link="research"
   title="Publications"
   text=text
@@ -36,7 +36,6 @@ My published work.
 
 {% capture text %}
 
-Under construction. Check back later for open source projects :smile:
 
 {%
   include button.html
@@ -60,8 +59,6 @@ Under construction. Check back later for open source projects :smile:
 %}
 
 {% capture text %}
-
-A bit about my lab, my service contributions, etc.
 
 {%
   include button.html
