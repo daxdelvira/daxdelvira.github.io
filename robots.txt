@@ -1,1 +1,1 @@
-Sitemap: https://daxdelvira.github.io/dax/sitemap.xml
+Sitemap: https://daxdelvira.github.io/sitemap.xml
