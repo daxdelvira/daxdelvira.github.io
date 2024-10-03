@@ -8,9 +8,9 @@ nav:
 # {% include icon.html icon="fa-solid fa-users" %}NetSys @ GATech
 
 I'm grateful to work with a fantastic advisor and labmates. We each explore the intersections of ML, networks, and systems from different angles. More on my labmates work can be found on their respective sites:
- + [Vima Gupta] (https://vimagupta.github.io/) (Systems optimizations for mixture-of-experts models)
- + [Mingyu Guan] (https://mingyuguan.github.io/) (Graph neural networks and DNN Inference)
- + [Jiaqi Deng] (https://jqdeng7.github.io/) (Throughput-optimized computer vision systems)
+ + [Vima Gupta](https://vimagupta.github.io/) (Systems optimizations for mixture-of-experts models)
+ + [Mingyu Guan](https://mingyuguan.github.io/) (Graph neural networks and DNN Inference)
+ + [Jiaqi Deng](https://jqdeng7.github.io/) (Throughput-optimized computer vision systems)
  + Abhishek Vijeev 
 
 {% include section.html %}
