@@ -8,7 +8,7 @@
     - Yogesh Simmhan
     - Xuchao Zhang
     - Jonathan Mace
-    - Dax Delvira
+    - **Dax Delvira**
     - Pedro Las-Casas
     - Shachee Mishra Gupta
     - Suman Nath
@@ -17,14 +17,14 @@
   publisher: Symposium on Cloud Computing 2024
   date: 2024-11-20
   link: https://arxiv.org/abs/2407.12165
-  image: images/'Screenshot From 2024-10-02 14-53-37.png'
+  image: images/Screenshot From 2024-10-02 14-53-37.png
 - title: "Morph: Efficient File-Lifetime Redundancy Management for Cluster File Systems"
   authors:
     - Timothy Kim
     - Sanjith Athlur
     - Saurabh Kadekodi
     - Francisco Maturana
-    - Dax Delvira
+    - **Dax Delvira**
     - Arif Merchant
     - Gregory R. Ganger
     - K. V. Rashmi
