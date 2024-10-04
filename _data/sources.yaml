@@ -17,6 +17,7 @@
   publisher: Symposium on Cloud Computing 2024
   date: 2024-11-20
   link: https://arxiv.org/abs/2407.12165
+  image: images/'Screenshot From 2024-10-02 14-53-37.png'
 - title: "Morph: Efficient File-Lifetime Redundancy Management for Cluster File Systems"
   authors:
     - Timothy Kim
