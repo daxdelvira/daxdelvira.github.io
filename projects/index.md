@@ -7,8 +7,9 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+This page is under construction! In the meantime, my publications can be found at the following links:
+[Building AI Agents for Autonomous Clouds](https://dl.acm.org/doi/abs/10.1145/3698038.3698525)
+[Morph: Efficient File Lifetime Redundancy Management](https://dl.acm.org/doi/abs/10.1145/3694715.3695981)
 
 {% include tags.html tags="publication, resource, website" %}
 
