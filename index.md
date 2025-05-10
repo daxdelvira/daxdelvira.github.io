@@ -14,7 +14,7 @@ I always enjoy learning from other students and researchers, and can be reached 
 
 {%
   include feature.html
-  image="images/IMG_0752.jpg"
+  image="images/dax_rectangle_profile_photo.jpeg"
   link="research"
   title=""
   text=text
