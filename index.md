@@ -6,7 +6,9 @@
 
 {% capture text %}
 
-I am a first year PhD student broadly interested in the intersection of systems and ML. I'm fortunate to be part of NetSys Lab @ GATech, advised by Anand Iyer. Prior to joining NetSys, I was an undergraduate research intern for various systems projects. I worked with Greg Ganger and Rashmi Vinayak at the CMU Parallel Data Lab, implementing a new theory-enhanced  system to make transitioning data between redundancy schemes more efficient,and with Sid Sen, Chetan Bansal, and Gagan Somashekar at Microsoft Research Labs using AI behavior mimicry techniques to generate synthetic application request traces for system reliability.
+I'm a first-year PhD student in Computer Science at Georgia Tech, where I'm advised by [Anand Iyer](https://www.anand-iyer.com/) in the NetSys Lab. My research interests lie at the intersection of systems and machine learning, with a current focus on building efficient and reliable agentic LLM systems for complex, distributed tasks.
+
+Before joining Georgia Tech, I was an undergraduate research intern on several systems projects. At Carnegie Mellon’s Parallel Data Lab, I worked with [Greg Ganger](https://www.ece.cmu.edu/directory/bios/ganger-greg.html) and [Rashmi Vinayak](https://www.cs.cmu.edu/~rvinayak/) on a theory-enhanced system for efficiently transitioning data across redundancy schemes. At Microsoft Research, I collaborated with Sid Sen, Chetan Bansal, and Gagan Somashekar to develop synthetic application request traces via AI behavior mimicry for system reliability testing.
 
 I always enjoy learning from other students and researchers, and can be reached by emailing dax [at] gatech [dot] edu.
 
