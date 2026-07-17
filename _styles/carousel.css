@@ -1,0 +1,82 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform var(--transition);
+}
+
+/* each project card becomes a full-width slide */
+.carousel-track > .card {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-shadow: none;
+  border: 1px solid var(--light-gray);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: var(--background);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity var(--transition), background var(--transition);
+}
+
+.carousel-btn:hover {
+  opacity: 1;
+  background: var(--background-alt);
+}
+
+.carousel-prev {
+  left: 6px;
+}
+
+.carousel-next {
+  right: 6px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--light-gray);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.carousel-dot[data-active] {
+  background: var(--primary);
+}
+
+/* single-slide: no controls needed */
+.carousel[data-single] .carousel-btn,
+.carousel[data-single] .carousel-dots {
+  display: none;
+}
+
+/*# sourceMappingURL=carousel.css.map */

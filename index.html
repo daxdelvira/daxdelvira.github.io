@@ -44,17 +44,17 @@
 <link rel="icon" href="/images/icon.png">
 
 <meta name="title" content="">
-<meta name="description" content="">
+<meta name="description" content="PhD researcher building AI runtime systems for LLMs, distributed systems, and high-performance computing.">
 
 <meta property="og:title" content="">
 <meta property="og:site_title" content="Dax Delvira">
-<meta property="og:description" content="">
+<meta property="og:description" content="PhD researcher building AI runtime systems for LLMs, distributed systems, and high-performance computing.">
 <meta property="og:url" content="https://daxdelvira.github.io">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="">
-<meta property="twitter:description" content="">
+<meta property="twitter:description" content="PhD researcher building AI runtime systems for LLMs, distributed systems, and high-performance computing.">
 <meta property="twitter:url" content="https://daxdelvira.github.io">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
@@ -70,7 +70,7 @@
       "@type": "WebSite",
     
     "name": "",
-    "description": "",
+    "description": "PhD researcher building AI runtime systems for LLMs, distributed systems, and high-performance computing.",
     "headline": "",
     "publisher": {
       "@type": "Organization",
@@ -139,6 +139,10 @@
   
 
   
+    <link href="/_styles/carousel.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/checkbox.css" rel="stylesheet">
   
 
@@ -196,6 +200,10 @@
 
   
     <link href="/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/home.css" rel="stylesheet">
   
 
   
@@ -330,6 +338,10 @@
 
   
 
+  
+
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -344,6 +356,8 @@
 
 
   <script src="/_scripts/anchors.js"></script>
+
+  <script src="/_scripts/carousel.js"></script>
 
   <script src="/_scripts/dark-mode.js"></script>
 
@@ -509,23 +523,17 @@
 
 <h2 id="about-me">About Me</h2>
 
-<div class="feature">
-  <a href="/research" class="feature-image" aria-label="feature link">
-    <img src="/images/dax_rectangle_profile_photo.jpeg" loading="lazy" alt="feature image" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title"></p>
-    
-    
-<p>I’m a first-year PhD student in Computer Science at Georgia Tech, where I’m advised by <a href="https://www.anand-iyer.com/">Anand Iyer</a> in the NetSys Lab. My research interests lie at the intersection of systems and machine learning, with a current focus on building efficient and reliable agentic LLM systems for complex, distributed tasks.</p>
+<div class="home-about">
+  <img class="home-portrait" src="/images/dax_rectangle_profile_photo.jpeg" alt="Dax Delvira">
+  
+  
+<p>I’m a third-year PhD student in Computer Science at Georgia Tech, advised by <a href="https://sites.cc.gatech.edu/home/ada/">Ada Gavrilovska</a> in the Kernel Lab. I work at the two-way intersection of systems and machine learning — building <strong>systems for AI</strong> and bringing <strong>AI into systems</strong> — with a throughline of storage and memory hierarchies.</p>
 
-<p>Before joining Georgia Tech, I was an undergraduate research intern on several systems projects. At Carnegie Mellon’s Parallel Data Lab, I worked with <a href="https://www.ece.cmu.edu/directory/bios/ganger-greg.html">Greg Ganger</a> and <a href="https://www.cs.cmu.edu/~rvinayak/">Rashmi Vinayak</a> on a theory-enhanced system for efficiently transitioning data across redundancy schemes. At Microsoft Research, I collaborated with Sid Sen, Chetan Bansal, and Gagan Somashekar to develop synthetic application request traces via AI behavior mimicry for system reliability testing.</p>
+<p>My current work builds AI runtime systems that let multi-agent LLM workflows for scientific computing run efficiently on high-performance computing platforms. Earlier, at Carnegie Mellon’s Parallel Data Lab, I worked with <a href="https://www.ece.cmu.edu/directory/bios/ganger-greg.html">Greg Ganger</a> and <a href="https://www.cs.cmu.edu/~rvinayak/">Rashmi Vinayak</a> on efficiently managing data across redundancy schemes in cluster storage. At Microsoft Research, I collaborated with Sid Sen, Chetan Bansal, and Gagan Somashekar on AI-driven methods for cloud reliability testing.</p>
 
-<p>I always enjoy learning from other students and researchers, and can be reached by emailing dax [at] gatech [dot] edu.</p>
+<p>I can be reached by emailing dax [at] gatech [dot] edu.</p>
 
 
-  </div>
 </div>
   </section>
 
@@ -542,70 +550,121 @@
 
 <h2 id="highlights">Highlights</h2>
 
-<div class="feature">
-  <a href="/research" class="feature-image" aria-label="Publications">
-    <img src="/images/Screenshot%20From%202024-10-02%2014-53-37.png" loading="lazy" alt="Publications" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Publications</p>
-    
-    
-<div class="button-wrapper">
-    <a class="button" href="/research" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
+<div class="home-highlights">
+
+  <!-- Publications panel -->
+  <div class="home-panel">
+    <div class="home-panel-head">
+      <span class="home-panel-title">
+        <i class="icon fa-solid fa-graduation-cap"></i>Publications
+      </span>
+      <a class="home-cites" href="https://scholar.google.com/citations?user=cjflvX8AAAAJ" target="_blank" rel="noopener" data-tooltip="Total citations on Google Scholar">
+        <span class="home-cites-num">89</span>
+        <span class="home-cites-label">citations</span>
+      </a>
+    </div>
+
+    <ol class="home-pubs">
       
-        <span>See publications</span>
       
+        <li class="home-pub">
+          <a class="home-pub-title" href="https://arxiv.org/abs/2407.12165" target="_blank" rel="noopener">Building AI Agents for Autonomous Clouds: Challenges and Design Principles</a>
+          <span class="home-pub-cites" data-tooltip="Citations">76</span>
+        </li>
+      
+        <li class="home-pub">
+          <a class="home-pub-title" href="https://www.pdl.cmu.edu/ftp/Storage/Morph_Final.pdf" target="_blank" rel="noopener">Morph: Efficient File-Lifetime Redundancy Management for Cluster File Systems</a>
+          <span class="home-pub-cites" data-tooltip="Citations">13</span>
+        </li>
+      
+    </ol>
+
+    <a class="home-panel-more" href="/research">
+      All publications <i class="icon fa-solid fa-arrow-right"></i>
     </a>
   </div>
 
+  <!-- Projects carousel -->
+  <div class="home-panel">
+    <div class="home-panel-head">
+      <span class="home-panel-title">
+        <i class="icon fa-solid fa-wrench"></i>Projects
+      </span>
+      <a class="home-panel-more" href="/projects">
+        All projects <i class="icon fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
 
+    <div class="carousel">
+      <div class="carousel-track">
+        
+
+
+
+
+
+  
+
+  
+
+  
+    
+
+     
+<div class="card" data-style="">
+  <a href="https://github.com/daxdelvira/agent-hpc-runtime" aria-label="Agentic HPC Runtime" class="card-image">
+    <img src="/images/agent_runtime_diagram.png" alt="Agentic HPC Runtime" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+
+  <div class="card-text">
+    
+      <a href="https://github.com/daxdelvira/agent-hpc-runtime" class="card-title">
+        Agentic HPC Runtime
+    </a>
+    
+
+    
+      <span class="card-subtitle">Speculative prefetching for agentic HPC workflows</span>
+    
+
+    
+      <p>
+        A prediction-driven prefetch runtime that sits between an LLM agent and the HPC resources it needs. After each LLM response it predicts which model weights or data files the next tool call will require, loads them speculatively in the background, and cancels if the agent diverges — overlapping expensive I/O with active computation instead of stalling on it.
+
+      </p>
+    
+
+    
+      
+
+
+  <div class="tags" data-repo="daxdelvira/agent-hpc-runtime" data-link="https://daxdelvira.github.io/">
+    
+      <a href="https://daxdelvira.github.io/?search=%22tag:%20github-repo%22" class="tag" data-tooltip='Show items with the tag "github-repo"'>
+        github-repo
+      </a>
+    
+  </div>
+
+
+    
   </div>
 </div>
 
-<div class="feature" data-flip="">
-  <a href="/projects" class="feature-image" aria-label="Projects">
-    <img src="/images/photo.jpg" loading="lazy" alt="Projects" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Projects</p>
-    
-    
-<div class="button-wrapper">
-    <a class="button" href="/projects" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>Browse projects</span>
-      
-    </a>
+  
+
+
+      </div>
+      <button class="carousel-btn carousel-prev" aria-label="Previous project">
+        <i class="icon fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="carousel-btn carousel-next" aria-label="Next project">
+        <i class="icon fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="carousel-dots"></div>
+    </div>
   </div>
 
-
-  </div>
-</div>
-
-<div class="feature" data-flip="">
-  <a href="/community" class="feature-image" aria-label="Community">
-    <img src="/images/photo.jpg" loading="lazy" alt="Community" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Community</p>
-    
-    
-<div class="button-wrapper">
-    <a class="button" href="/community" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>See community involvement</span>
-      
-    </a>
-  </div>
-
-
-  </div>
 </div>
   </section>
 
@@ -630,7 +689,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@daxdelviraDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab..com" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:dax@gatech.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -645,7 +704,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+    <a class="button" href="https://orcid.org/0009-0001-8627-5413" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
       <i class="icon fa-brands fa-orcid"></i>
       
     </a>
@@ -660,7 +719,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+    <a class="button" href="https://scholar.google.com/citations?user=cjflvX8AAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
@@ -675,38 +734,8 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/daxdelviraDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+    <a class="button" href="https://github.com/daxdelvira" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://twitter.com/daxdelviraDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
-      <i class="icon fa-brands fa-twitter"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://youtube.com/daxdelviraDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="YouTube" data-style="bare" aria-label="YouTube">
-      <i class="icon fa-brands fa-youtube"></i>
       
     </a>
   </div>
@@ -716,7 +745,7 @@
   </div>
 
   <div>
-    © 2025
+    © 2026
     Dax Delvira
       |   Built with
     <a href="https://github.com/greenelab/lab-website-template">

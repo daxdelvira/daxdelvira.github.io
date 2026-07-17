@@ -44,17 +44,17 @@
 <link rel="icon" href="/images/icon.png">
 
 <meta name="title" content="Projects">
-<meta name="description" content="">
+<meta name="description" content="PhD researcher building AI runtime systems for LLMs, distributed systems, and high-performance computing.">
 
 <meta property="og:title" content="Projects">
 <meta property="og:site_title" content="Dax Delvira">
-<meta property="og:description" content="">
+<meta property="og:description" content="PhD researcher building AI runtime systems for LLMs, distributed systems, and high-performance computing.">
 <meta property="og:url" content="https://daxdelvira.github.io">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Projects">
-<meta property="twitter:description" content="">
+<meta property="twitter:description" content="PhD researcher building AI runtime systems for LLMs, distributed systems, and high-performance computing.">
 <meta property="twitter:url" content="https://daxdelvira.github.io">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
@@ -70,7 +70,7 @@
       "@type": "WebSite",
     
     "name": "Projects",
-    "description": "",
+    "description": "PhD researcher building AI runtime systems for LLMs, distributed systems, and high-performance computing.",
     "headline": "Projects",
     "publisher": {
       "@type": "Organization",
@@ -139,6 +139,10 @@
   
 
   
+    <link href="/_styles/carousel.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/checkbox.css" rel="stylesheet">
   
 
@@ -196,6 +200,10 @@
 
   
     <link href="/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/home.css" rel="stylesheet">
   
 
   
@@ -330,6 +338,10 @@
 
   
 
+  
+
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -344,6 +356,8 @@
 
 
   <script src="/_scripts/anchors.js"></script>
+
+  <script src="/_scripts/carousel.js"></script>
 
   <script src="/_scripts/dark-mode.js"></script>
 
@@ -504,22 +518,24 @@
     <h1 id="projects">
 <i class="icon fa-solid fa-wrench"></i>Projects</h1>
 
-<p>This page is under construction! In the meantime, my publications can be found at the following links:
-<a href="https://dl.acm.org/doi/abs/10.1145/3698038.3698525">Building AI Agents for Autonomous Clouds</a>
-<a href="https://dl.acm.org/doi/abs/10.1145/3694715.3695981">Morph: Efficient File Lifetime Redundancy Management</a></p>
+<p>Software and systems I’ve built. For published work, see the <a href="/research">research</a> page.</p>
 
 <div class="tags" data-link="https://daxdelvira.github.io/projects/">
     
-      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20publication%22" class="tag" data-tooltip='Show items with the tag "publication"'>
-        publication
+      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20github-repo%22" class="tag" data-tooltip='Show items with the tag "github-repo"'>
+        github-repo
+      </a>
+    
+      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20dataset%22" class="tag" data-tooltip='Show items with the tag "dataset"'>
+        dataset
       </a>
     
       <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20resource%22" class="tag" data-tooltip='Show items with the tag "resource"'>
         resource
       </a>
     
-      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20website%22" class="tag" data-tooltip='Show items with the tag "website"'>
-        website
+      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20talk-recording%22" class="tag" data-tooltip='Show items with the tag "talk-recording"'>
+        talk-recording
       </a>
     
   </div>
@@ -538,27 +554,25 @@
   size: ;
 -->
 
-<h2 id="featured">Featured</h2>
-
 <div class="card" data-style="">
-  <a href="https://github.com/" aria-label="Cool Dataset" class="card-image">
-    <img src="/images/photo.jpg" alt="Cool Dataset" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="https://github.com/daxdelvira/agent-hpc-runtime" aria-label="Agentic HPC Runtime" class="card-image">
+    <img src="/images/agent_runtime_diagram.png" alt="Agentic HPC Runtime" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
     
-      <a href="https://github.com/" class="card-title">
-        Cool Dataset
+      <a href="https://github.com/daxdelvira/agent-hpc-runtime" class="card-title">
+        Agentic HPC Runtime
     </a>
     
 
     
-      <span class="card-subtitle">a subtitle</span>
+      <span class="card-subtitle">Speculative prefetching for agentic HPC workflows</span>
     
 
     
       <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        A prediction-driven prefetch runtime that sits between an LLM agent and the HPC resources it needs. After each LLM response it predicts which model weights or data files the next tool call will require, loads them speculatively in the background, and cancels if the agent diverges — overlapping expensive I/O with active computation instead of stalling on it.
 
       </p>
     
@@ -567,188 +581,10 @@
       
 
 
-  <div class="tags" data-repo="greenelab/lab-website-template" data-link="https://daxdelvira.github.io/projects/">
+  <div class="tags" data-repo="daxdelvira/agent-hpc-runtime" data-link="https://daxdelvira.github.io/projects/">
     
-      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20resource%22" class="tag" data-tooltip='Show items with the tag "resource"'>
-        resource
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-
-<div class="card" data-style="">
-  <a href="https://github.com/" aria-label="Cool Package" class="card-image">
-    <img src="/images/photo.jpg" alt="Cool Package" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a href="https://github.com/" class="card-title">
-        Cool Package
-    </a>
-    
-
-    
-      <span class="card-subtitle">a subtitle</span>
-    
-
-    
-      <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-repo="greenelab/lab-website-template" data-link="https://daxdelvira.github.io/projects/">
-    
-      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20resource%22" class="tag" data-tooltip='Show items with the tag "resource"'>
-        resource
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  background: ;
-  dark: ;
-  size: ;
--->
-
-<h2 id="more">More</h2>
-
-<div class="card" data-style="small">
-  <a href="https://github.com/" aria-label="Cool Tutorial" class="card-image">
-    <img src="/images/photo.jpg" alt="Cool Tutorial" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a href="https://github.com/" class="card-title">
-        Cool Tutorial
-    </a>
-    
-
-    
-      <span class="card-subtitle">a subtitle</span>
-    
-
-    
-      <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-repo="greenelab/lab-website-template" data-link="https://daxdelvira.github.io/projects/">
-    
-      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20resource%22" class="tag" data-tooltip='Show items with the tag "resource"'>
-        resource
-      </a>
-    
-      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20publication%22" class="tag" data-tooltip='Show items with the tag "publication"'>
-        publication
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-
-<div class="card" data-style="small">
-  <a href="https://github.com/" aria-label="Cool Web App" class="card-image">
-    <img src="/images/photo.jpg" alt="Cool Web App" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a href="https://github.com/" class="card-title">
-        Cool Web App
-    </a>
-    
-
-    
-      <span class="card-subtitle">a subtitle</span>
-    
-
-    
-      <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-repo="greenelab/lab-website-template" data-link="https://daxdelvira.github.io/projects/">
-    
-      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20software%22" class="tag" data-tooltip='Show items with the tag "software"'>
-        software
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-
-<div class="card" data-style="small">
-  <a href="https://github.com/" aria-label="Cool Web Server" class="card-image">
-    <img src="/images/photo.jpg" alt="Cool Web Server" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a href="https://github.com/" class="card-title">
-        Cool Web Server
-    </a>
-    
-
-    
-      <span class="card-subtitle">a subtitle</span>
-    
-
-    
-      <p>
-        Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-repo="greenelab/lab-website-template" data-link="https://daxdelvira.github.io/projects/">
-    
-      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20software%22" class="tag" data-tooltip='Show items with the tag "software"'>
-        software
+      <a href="https://daxdelvira.github.io/projects/?search=%22tag:%20github-repo%22" class="tag" data-tooltip='Show items with the tag "github-repo"'>
+        github-repo
       </a>
     
   </div>
@@ -780,7 +616,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@daxdelviraDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab..com" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:dax@gatech.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -795,7 +631,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+    <a class="button" href="https://orcid.org/0009-0001-8627-5413" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
       <i class="icon fa-brands fa-orcid"></i>
       
     </a>
@@ -810,7 +646,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+    <a class="button" href="https://scholar.google.com/citations?user=cjflvX8AAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
@@ -825,38 +661,8 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/daxdelviraDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+    <a class="button" href="https://github.com/daxdelvira" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://twitter.com/daxdelviraDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
-      <i class="icon fa-brands fa-twitter"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://youtube.com/daxdelviraDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="YouTube" data-style="bare" aria-label="YouTube">
-      <i class="icon fa-brands fa-youtube"></i>
       
     </a>
   </div>
@@ -866,7 +672,7 @@
   </div>
 
   <div>
-    © 2025
+    © 2026
     Dax Delvira
       |   Built with
     <a href="https://github.com/greenelab/lab-website-template">
