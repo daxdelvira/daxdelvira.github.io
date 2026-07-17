@@ -23,6 +23,15 @@ header {
   }
 }
 
+// solid Gruvbox background instead of the cube image overlay
+header.background {
+  background: #1d2021;
+}
+
+header.background:before {
+  display: none;
+}
+
 header a {
   color: var(--text);
   text-decoration: none;

@@ -124,27 +124,27 @@ linkedin:
 
 tip:
   icon: fa-solid fa-lightbulb
-  color: "#d946ef"
+  color: "#b16286" # gruvbox purple
 
 help:
   icon: fa-solid fa-circle-question
-  color: "#6366f1"
+  color: "#458588" # gruvbox blue
 
 info:
   icon: fa-solid fa-circle-info
-  color: "#0ea5e9"
+  color: "#689d6a" # gruvbox aqua
 
 success:
   icon: fa-solid fa-circle-check
-  color: "#22c55e"
+  color: "#98971a" # gruvbox green
 
 warning:
   icon: fa-solid fa-circle-exclamation
-  color: "#F59E0B"
+  color: "#d79921" # gruvbox yellow
 
 error:
   icon: fa-solid fa-ban
-  color: "#ef4444"
+  color: "#cc241d" # gruvbox red
 
 # publications
 
