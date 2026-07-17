@@ -28,6 +28,10 @@
 }
 
 :root {
+  // light "mat" behind card/citation images so white-background diagrams
+  // look intentional (esp. in dark mode). intentionally theme-independent.
+  --mat: #f4f1e9;
+
   // font families
   --title: "Barlow", sans-serif;
   --heading: "Barlow", sans-serif;

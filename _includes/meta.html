@@ -45,6 +45,10 @@
 
 <title>{{ fulltitle }}</title>
 
+{% assign svgicon = "images/favicon.svg" | file_exists %}
+{% if svgicon %}
+  <link rel="icon" type="image/svg+xml" href="{{ svgicon | relative_url }}">
+{% endif %}
 <link rel="icon" href="{{ icon }}">
 
 <meta name="title" content="{{ title }}">
