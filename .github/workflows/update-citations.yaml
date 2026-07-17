@@ -56,12 +56,19 @@ jobs:
         run: python _cite/cite.py
         timeout-minutes: 15
 
+      # refresh home-page Publications panel numbers from Google Scholar.
+      # no-op unless GOOGLE_SCHOLAR_API_KEY is set (see _cite/scholar_stats.py).
+      - name: Update scholar stats
+        run: python _cite/scholar_stats.py
+        timeout-minutes: 5
+
       - name: Check if citations changed
         id: changed
         uses: tj-actions/verify-changed-files@v18
         with:
           files: |
             _data/citations.yaml
+            _data/scholar.yaml
 
       - name: Commit updated citations to branch
         if: |
