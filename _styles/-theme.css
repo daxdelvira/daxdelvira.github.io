@@ -1,25 +1,25 @@
 [data-dark=false] {
-  --primary: #0795d9;
-  --secondary: #7dd3fc;
-  --text: #000000;
+  --primary: #458588;
+  --secondary: #689d6a;
+  --text: #282828;
   --background: #ffffff;
-  --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
-  --gray: #808080;
-  --dark-gray: #404040;
-  --overlay: #00000020;
+  --background-alt: #f7f1e3;
+  --light-gray: #e3dbc7;
+  --gray: #928374;
+  --dark-gray: #504945;
+  --overlay: #00000018;
 }
 
 [data-dark=true] {
-  --primary: #0795d9;
-  --secondary: #075985;
-  --text: #ffffff;
-  --background: #181818;
-  --background-alt: #1c1c1c;
-  --light-gray: #404040;
-  --gray: #808080;
-  --dark-gray: #b0b0b0;
-  --overlay: #ffffff10;
+  --primary: #83a598;
+  --secondary: #8ec07c;
+  --text: #ebdbb2;
+  --background: #282828;
+  --background-alt: #32302f;
+  --light-gray: #504945;
+  --gray: #928374;
+  --dark-gray: #bdae93;
+  --overlay: #ffffff12;
 }
 
 :root {

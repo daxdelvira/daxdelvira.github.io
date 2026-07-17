@@ -9,6 +9,14 @@ footer {
   box-shadow: var(--shadow);
 }
 
+footer.background {
+  background: #1d2021;
+}
+
+footer.background:before {
+  display: none;
+}
+
 footer a {
   color: var(--text) !important;
 }
