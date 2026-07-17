@@ -1,0 +1,61 @@
+<div class="home-highlights">
+
+  <!-- Publications panel -->
+  <div class="home-panel">
+    <div class="home-panel-head">
+      <span class="home-panel-title">
+        {% include icon.html icon="fa-solid fa-graduation-cap" %}Publications
+      </span>
+      <a
+        class="home-cites"
+        href="{{ site.data.scholar.profile }}"
+        target="_blank"
+        rel="noopener"
+        data-tooltip="Total citations on Google Scholar"
+      >
+        <span class="home-cites-num">{{ site.data.scholar.lifetime_citations }}</span>
+        <span class="home-cites-label">citations</span>
+      </a>
+    </div>
+
+    <ol class="home-pubs">
+      {% assign pubs = site.data.scholar.publications | sort: "citations" | reverse %}
+      {% for pub in pubs limit: 3 %}
+        <li class="home-pub">
+          <a class="home-pub-title" href="{{ pub.link }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+          <span class="home-pub-cites" data-tooltip="Citations">{{ pub.citations }}</span>
+        </li>
+      {% endfor %}
+    </ol>
+
+    <a class="home-panel-more" href="{{ 'research' | relative_url }}">
+      All publications {% include icon.html icon="fa-solid fa-arrow-right" %}
+    </a>
+  </div>
+
+  <!-- Projects carousel -->
+  <div class="home-panel">
+    <div class="home-panel-head">
+      <span class="home-panel-title">
+        {% include icon.html icon="fa-solid fa-wrench" %}Projects
+      </span>
+      <a class="home-panel-more" href="{{ 'projects' | relative_url }}">
+        All projects {% include icon.html icon="fa-solid fa-arrow-right" %}
+      </a>
+    </div>
+
+    <div class="carousel">
+      <div class="carousel-track">
+        {% include list.html component="card" data="projects" %}
+      </div>
+      <button class="carousel-btn carousel-prev" aria-label="Previous project">
+        {% include icon.html icon="fa-solid fa-chevron-left" %}
+      </button>
+      <button class="carousel-btn carousel-next" aria-label="Next project">
+        {% include icon.html icon="fa-solid fa-chevron-right" %}
+      </button>
+      <div class="carousel-dots"></div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+# Google Scholar highlights shown on the home page (Publications panel).
+#
+# You can update these numbers by hand, OR have them regenerated automatically
+# on each site build by setting up a SerpAPI key — see the header comment in
+# _cite/plugins/google-scholar.py and _data/google-scholar.yaml for setup.
+#
+# When the SerpAPI path is enabled, the build overwrites this file.
+
+profile: https://scholar.google.com/citations?user=cjflvX8AAAAJ
+lifetime_citations: 89
+publications:
+  - title: "Building AI Agents for Autonomous Clouds: Challenges and Design Principles"
+    link: https://arxiv.org/abs/2407.12165
+    citations: 76
+  - title: "Morph: Efficient File-Lifetime Redundancy Management for Cluster File Systems"
+    link: https://www.pdl.cmu.edu/ftp/Storage/Morph_Final.pdf
+    citations: 13
