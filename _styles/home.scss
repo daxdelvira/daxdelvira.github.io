@@ -123,18 +123,23 @@ $stack: 800px;
   list-style: none;
   margin: 0;
   padding: 0;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
 }
 
+/* push the footer link to the bottom so pubs stay compact at the top */
+.home-panel > .home-panel-more {
+  margin-top: auto;
+}
+
 .home-pub {
-  flex: 1 1 0;
+  flex: 0 0 auto;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   gap: 14px;
-  padding: 14px 0;
+  padding: 10px 0;
   line-height: var(--compact);
 }
 
@@ -153,7 +158,7 @@ $stack: 800px;
   font-size: 0.78rem;
   font-weight: var(--semi-bold);
   letter-spacing: 0.5px;
-  color: var(--primary);
+  color: var(--text);
 }
 
 .home-pub-cites {
@@ -168,7 +173,3 @@ $stack: 800px;
   font-size: 0.85rem;
 }
 
-/* filler slots so a short list still fills the panel height, evenly spaced */
-.home-pub-empty {
-  opacity: 0.4;
-}
