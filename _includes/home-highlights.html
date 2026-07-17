@@ -18,14 +18,24 @@
       </a>
     </div>
 
+    {% assign slots = 3 %}
     <ol class="home-pubs">
       {% assign pubs = site.data.scholar.publications | sort: "citations" | reverse %}
-      {% for pub in pubs limit: 3 %}
+      {% for pub in pubs limit: slots %}
         <li class="home-pub">
-          <a class="home-pub-title" href="{{ pub.link }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+          <div class="home-pub-main">
+            <a class="home-pub-title" href="{{ pub.link }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+            {% if pub.venue %}<span class="home-pub-venue">{{ pub.venue }}</span>{% endif %}
+          </div>
           <span class="home-pub-cites" data-tooltip="Citations">{{ pub.citations }}</span>
         </li>
       {% endfor %}
+      {% assign remaining = slots | minus: pubs.size %}
+      {% if remaining > 0 %}
+        {% for i in (1..remaining) %}
+          <li class="home-pub home-pub-empty" aria-hidden="true"></li>
+        {% endfor %}
+      {% endif %}
     </ol>
 
     <a class="home-panel-more" href="{{ 'research' | relative_url }}">

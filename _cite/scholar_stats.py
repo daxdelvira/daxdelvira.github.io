@@ -61,11 +61,14 @@ def main():
         log("Couldn't parse Scholar id from profile URL; skipping", level="WARNING")
         return
 
-    # keep existing title->link so we preserve nice arXiv/PDF links over
-    # Scholar's redirect links
+    # keep existing title->link/venue so we preserve nice arXiv/PDF links (over
+    # Scholar's redirect links) and hand-tuned venue labels
     existing_links = {}
+    existing_venues = {}
     for pub in get_safe(data, "publications", []) or []:
-        existing_links[normalize(get_safe(pub, "title", ""))] = get_safe(pub, "link", "")
+        key = normalize(get_safe(pub, "title", ""))
+        existing_links[key] = get_safe(pub, "link", "")
+        existing_venues[key] = get_safe(pub, "venue", "")
 
     # query SerpAPI's Google Scholar author endpoint
     params = {
@@ -86,9 +89,14 @@ def main():
         title = get_safe(work, "title", "")
         if not title:
             continue
+        key = normalize(title)
         citations = get_safe(work, "cited_by.value", 0) or 0
-        link = existing_links.get(normalize(title)) or get_safe(work, "link", "")
-        pubs.append({"title": title, "link": link, "citations": citations})
+        link = existing_links.get(key) or get_safe(work, "link", "")
+        # prefer a hand-tuned venue; fall back to Scholar's publication string
+        venue = existing_venues.get(key) or get_safe(work, "publication", "")
+        pubs.append(
+            {"title": title, "venue": venue, "link": link, "citations": citations}
+        )
 
     # keep the most-cited handful
     pubs.sort(key=lambda p: p["citations"], reverse=True)

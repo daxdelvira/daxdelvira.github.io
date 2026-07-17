@@ -10,8 +10,10 @@ profile: https://scholar.google.com/citations?user=cjflvX8AAAAJ
 lifetime_citations: 89
 publications:
   - title: "Building AI Agents for Autonomous Clouds: Challenges and Design Principles"
+    venue: "SoCC 2024"
     link: https://arxiv.org/abs/2407.12165
     citations: 76
   - title: "Morph: Efficient File-Lifetime Redundancy Management for Cluster File Systems"
+    venue: "SOSP 2024"
     link: https://www.pdl.cmu.edu/ftp/Storage/Morph_Final.pdf
     citations: 13
