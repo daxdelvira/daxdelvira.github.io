@@ -7,22 +7,12 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-This page is under construction! In the meantime, my publications can be found at the following links:
-[Building AI Agents for Autonomous Clouds](https://dl.acm.org/doi/abs/10.1145/3698038.3698525)
-[Morph: Efficient File Lifetime Redundancy Management](https://dl.acm.org/doi/abs/10.1145/3694715.3695981)
+Software and systems I've built. For published work, see the [research](/research) page.
 
-{% include tags.html tags="publication, resource, website" %}
+{% include tags.html tags="github repo,dataset,resource,talk recording" %}
 
 {% include search-info.html %}
 
 {% include section.html %}
 
-## Featured
-
-{% include list.html component="card" data="projects" filters="group: featured" %}
-
-{% include section.html %}
-
-## More
-
-{% include list.html component="card" data="projects" filters="group: " style="small" %}
+{% include list.html component="card" data="projects" %}

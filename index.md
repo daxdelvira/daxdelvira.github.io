@@ -6,9 +6,9 @@
 
 {% capture text %}
 
-I'm a first-year PhD student in Computer Science at Georgia Tech, where I'm advised by [Anand Iyer](https://www.anand-iyer.com/) in the NetSys Lab. My research interests lie at the intersection of systems and machine learning, with a current focus on building efficient and reliable agentic LLM systems for complex, distributed tasks.
+I'm a third-year PhD student in Computer Science at Georgia Tech, advised by [Ada Gavrilovska](https://sites.cc.gatech.edu/home/ada/) in the Kernel Lab. I work at the two-way intersection of systems and machine learning — building **systems for AI** and bringing **AI into systems** — with a throughline of storage and memory hierarchies.
 
-Before joining Georgia Tech, I was an undergraduate research intern on several systems projects. At Carnegie Mellon’s Parallel Data Lab, I worked with [Greg Ganger](https://www.ece.cmu.edu/directory/bios/ganger-greg.html) and [Rashmi Vinayak](https://www.cs.cmu.edu/~rvinayak/) on a theory-enhanced system for efficiently transitioning data across redundancy schemes. At Microsoft Research, I collaborated with Sid Sen, Chetan Bansal, and Gagan Somashekar to develop synthetic application request traces via AI behavior mimicry for system reliability testing.
+My current work builds AI runtime systems that let multi-agent LLM workflows for scientific computing run efficiently on high-performance computing platforms. Earlier, at Carnegie Mellon’s Parallel Data Lab, I worked with [Greg Ganger](https://www.ece.cmu.edu/directory/bios/ganger-greg.html) and [Rashmi Vinayak](https://www.cs.cmu.edu/~rvinayak/) on efficiently managing data across redundancy schemes in cluster storage. At Microsoft Research, I collaborated with Sid Sen, Chetan Bansal, and Gagan Somashekar on AI-driven methods for cloud reliability testing.
 
 I always enjoy learning from other students and researchers, and can be reached by emailing dax [at] gatech [dot] edu.
 
@@ -76,7 +76,7 @@ I always enjoy learning from other students and researchers, and can be reached 
 
 {%
   include button.html
-  link="community"
+  link="team"
   text="See community involvement"
   icon="fa-solid fa-arrow-right"
   flip=true
@@ -88,7 +88,7 @@ I always enjoy learning from other students and researchers, and can be reached 
 {%
   include feature.html
   image="images/photo.jpg"
-  link="community"
+  link="team"
   title="Community"
   flip=true
   style="bare"

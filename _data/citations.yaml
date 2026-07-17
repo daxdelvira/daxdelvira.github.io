@@ -34,5 +34,6 @@
   publisher: Symposium for Operating Systems Principles 2024
   date: '2024-11-04'
   link: https://www.pdl.cmu.edu/ftp/Storage/Morph_Final.pdf
+  image: images/morph_diagram.png
   plugin: sources.py
   file: sources.yaml

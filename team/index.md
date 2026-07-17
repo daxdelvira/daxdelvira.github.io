@@ -5,23 +5,17 @@ nav:
   tooltip: My lab, collaboration initiatives, and community contributions
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}NetSys @ GATech
+# {% include icon.html icon="fa-solid fa-users" %}Kernel Lab @ GATech
 
-I'm grateful to work with a fantastic advisor and labmates. We each explore the intersections of ML, networks, and systems from different angles. More on my labmates work can be found on their respective sites:
- + [Vima Gupta](https://vimagupta.github.io/) (Systems optimizations for mixture-of-experts models)
- + [Mingyu Guan](https://mingyuguan.github.io/) (Graph neural networks and DNN Inference)
+I'm grateful to work with a fantastic advisor, [Ada Gavrilovska](https://sites.cc.gatech.edu/home/ada/), and labmates in the Kernel Lab. We each explore systems software for emerging hardware, memory systems, and AI infrastructure from different angles.
+<!-- TODO: add current labmates + links here if you'd like -->
 
 {% include section.html %}
 
-{% capture content %}
+## Service
 
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
+ + **Treasurer**, School of Computer Science Graduate Student Association, Georgia Tech
+ + **Artifact Evaluator**, Symposium on Operating Systems Principles (SOSP) 2024
 
 {% include section.html background="images/background.jpg" dark=true %}
 
