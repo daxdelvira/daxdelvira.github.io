@@ -11,6 +11,9 @@ on:
 # variables
 env:
   PREVIEWS_FOLDER: preview
+  # posix-spawn 0.3.15 (via jekyll-last-modified-at) doesn't compile on
+  # GCC 14+, which turns incompatible-pointer-types into an error
+  BUNDLE_BUILD__POSIX___SPAWN: "--with-cflags=-Wno-error=incompatible-pointer-types"
 
 permissions:
   contents: write
