@@ -1,4 +1,11 @@
 # manually provide all citation details
+- title: "When Agents Break the Memory Hierarchy: Understanding Data Stalls in Agentic HPC Workflows"
+  authors:
+    - Dax Delvira
+    - Ada Gavrilovska
+  publisher: "SC26-W: Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis"
+  date: 2026-11-15
+  link: https://doi.ieeecomputersociety.org/10.1109/SCW72768.2026.00183
 - title: "Building AI Agents for Autonomous Clouds: Challenges and Design Principles"
   authors:
     - Manish Shetty

@@ -25,11 +25,6 @@
         content: "describedby",
         expanded: null,
       },
-      onShow: ({ reference, popper }) => {
-        const dark = reference.closest("[data-dark]")?.dataset.dark;
-        if (dark === "false") popper.dataset.dark = true;
-        if (dark === "true") popper.dataset.dark = false;
-      },
       // onHide: () => false, // debug
     });
   };

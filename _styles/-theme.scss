@@ -1,35 +1,29 @@
 ---
 ---
 
-// colors — Gruvbox palette
-// light mode keeps a clean white background with Gruvbox accents;
-// dark mode is full Gruvbox Dark.
-[data-dark="false"] {
-  --primary: #458588; // gruvbox neutral blue
-  --secondary: #689d6a; // gruvbox neutral aqua
-  --text: #282828; // gruvbox dark0 (warm near-black)
-  --background: #ffffff; // clean white
-  --background-alt: #f7f1e3; // soft warm tint for alternating sections
-  --light-gray: #e3dbc7; // warm light border
-  --gray: #928374; // gruvbox gray
-  --dark-gray: #504945; // gruvbox dark2
-  --overlay: #00000018;
-}
-[data-dark="true"] {
-  --primary: #83a598; // gruvbox bright blue
+// colors — Gruvbox accents on a neutral near-black/charcoal base
+// (dark mode only). backgrounds are neutral greys rather than gruvbox's
+// warm browns, to match the LinkedIn banner; accents stay gruvbox.
+:root,
+[data-dark] {
+  --primary: #83a598; // gruvbox bright blue (teal)
   --secondary: #8ec07c; // gruvbox bright aqua
-  --text: #ebdbb2; // gruvbox light1
-  --background: #282828; // gruvbox dark0
-  --background-alt: #32302f; // gruvbox dark0 soft
-  --light-gray: #504945; // gruvbox dark2 (borders)
+  --accent: #d79921; // gruvbox neutral yellow
+  --text: #ebdbb2; // gruvbox light1 (cream)
+  --background: #1c1c1c; // neutral near-black
+  --background-alt: #242424; // charcoal for alternating sections
+  --background-deep: #141414; // header/footer
+  --surface: #2e2e2e; // raised surfaces (tooltips)
+  --light-gray: #3a3a3a; // borders
   --gray: #928374; // gruvbox gray
   --dark-gray: #bdae93; // gruvbox light3
-  --overlay: #ffffff12;
+  --overlay: #00000066;
+  color-scheme: dark;
 }
 
 :root {
   // light "mat" behind card/citation images so white-background diagrams
-  // look intentional (esp. in dark mode). intentionally theme-independent.
+  // look intentional on the dark background.
   --mat: #f4f1e9;
 
   // font families

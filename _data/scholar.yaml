@@ -17,3 +17,7 @@ publications:
     venue: "SOSP 2024"
     link: https://www.pdl.cmu.edu/ftp/Storage/Morph_Final.pdf
     citations: 13
+  - title: "When Agents Break the Memory Hierarchy: Understanding Data Stalls in Agentic HPC Workflows"
+    venue: "SC '26 Workshops"
+    link: https://doi.ieeecomputersociety.org/10.1109/SCW72768.2026.00183
+    citations: 0
