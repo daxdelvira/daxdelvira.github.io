@@ -12,28 +12,44 @@ $stack: 800px;
   clear: both;
 }
 
-.home-portrait {
+.home-portraits {
   float: left;
   width: 200px;
   max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 28px 12px 0;
+}
+
+.home-portrait {
+  display: block;
+  width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
-  margin: 0 28px 12px 0;
 }
 
 .home-about p {
   margin-top: 0;
 }
 
+// on narrow screens, center the photo above the bio
 @media (max-width: $wrap) {
-  .home-portrait {
+  .home-portraits {
     float: none;
-    display: block;
-    width: 160px;
-    max-width: 60%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: auto;
+    max-width: none;
     margin: 0 auto 20px;
+  }
+
+  .home-portrait {
+    width: 150px;
+    max-width: 45%;
   }
 }
 
