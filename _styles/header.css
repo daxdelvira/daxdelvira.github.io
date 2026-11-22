@@ -12,7 +12,7 @@ header {
 }
 
 header.background {
-  background: #1d2021;
+  background: var(--background-deep);
 }
 
 header.background:before {

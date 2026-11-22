@@ -10,7 +10,7 @@ footer {
 }
 
 footer.background {
-  background: #1d2021;
+  background: var(--background-deep);
 }
 
 footer.background:before {
