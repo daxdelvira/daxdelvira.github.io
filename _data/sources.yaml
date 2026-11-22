@@ -6,6 +6,7 @@
   publisher: "SC26-W: Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis"
   date: 2026-11-15
   link: https://doi.ieeecomputersociety.org/10.1109/SCW72768.2026.00183
+  image: images/agentic_data_stall_diagram.png
 - title: "Building AI Agents for Autonomous Clouds: Challenges and Design Principles"
   authors:
     - Manish Shetty
